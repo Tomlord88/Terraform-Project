@@ -27,7 +27,7 @@ resource "aws_subnet" "tfsubnet2" {
     }
 }
 
-##Creating gateway
+ ##Creating gateway
 resource "aws_internet_gateway" "tfgw" {
     vpc_id = aws_vpc.tfvpc.id
     tags ={

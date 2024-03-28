@@ -1,3 +1,4 @@
+/*
 resource "aws_iam_role" "tf_eks_cluster" {
   name = "tf-eks-cluster-role"
 
@@ -7,7 +8,7 @@ resource "aws_iam_role" "tf_eks_cluster" {
       {
         Effect = "Allow",
         Principal = {
-          Service = ["eks.amazonaws.com"]
+          #Service = ["eks.amazonaws.com"]
         },
         Action = "sts:AssumeRole"
       },
@@ -56,3 +57,4 @@ resource "aws_iam_role_policy_attachment" "eks_vpc_resource_controller" {
   role       = aws_iam_role.tf_eks_cluster.name
   policy_arn = "arn:aws:iam::aws:policy/AmazonEKSVPCResourceController"
 }
+*/

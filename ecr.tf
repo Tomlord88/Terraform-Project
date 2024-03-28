@@ -1,3 +1,4 @@
+
 resource "aws_ecr_repository" "terra_project" {
   name                 = "terra-project" # Name of the repository
   image_tag_mutability = "MUTABLE"
