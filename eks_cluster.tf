@@ -1,5 +1,5 @@
 
-/*
+
 resource "aws_eks_cluster" "tf_eks_cluster" {
  name     = "tf_eks_cluster"
   role_arn = aws_iam_role.tf_eks_cluster.arn
@@ -15,4 +15,4 @@ resource "aws_eks_cluster" "tf_eks_cluster" {
     Project     = "ProjectTerra"
   }
 }
-*/
+
